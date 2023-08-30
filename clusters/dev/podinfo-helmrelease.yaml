@@ -1,0 +1,21 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: helm-poc-dev1-platform-macroservice-zxc001
+  namespace: helm-poc-dev1-platform
+spec:
+  chart:
+    spec:
+      chart: helm-guestbook
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: chartmuseum
+      version: 0.1.0
+  interval: 1m0s
+  releaseName: helm-poc-dev1-platform-macroservice-zxc001
+  values:
+    branchIdentifier: zxc001
+    global:
+      k8sEnv: poc-dev1
