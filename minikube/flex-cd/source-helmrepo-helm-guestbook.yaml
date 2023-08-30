@@ -6,4 +6,4 @@ metadata:
   namespace: helm-poc-dev1-platform
 spec:
   interval: 1m0s
-  url: http://localhost:8085
+  url: http://0.0.0.0:8085
