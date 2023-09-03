@@ -1,0 +1,21 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: fluxcd-poc-dev1-platform-helm-guestbook-qwe222
+  namespace: fluxcd-poc-dev1-platform
+spec:
+  chart:
+    spec:
+      chart: helm-guestbook-qwe222
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: chartmuseum
+      version: '>=0.1.0'
+  interval: 1m0s
+  releaseName: fluxcd-poc-dev1-platform-helm-guestbook-qwe222
+  values:
+    branchIdentifier: qwe222
+    global:
+      k8sEnv: poc-dev1
