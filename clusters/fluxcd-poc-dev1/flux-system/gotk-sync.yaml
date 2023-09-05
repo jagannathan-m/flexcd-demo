@@ -25,16 +25,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
----
-apiVersion: infra.contrib.fluxcd.io/v1alpha1
-kind: Terraform
-metadata:
-  name: helloworld
-  namespace: flux-system
-spec:
-  interval: 1m
-  approvePlan: auto
-  path: ./clusters/fluxcd-poc-dev1/infra/tf-modules
-  sourceRef:
-    kind: GitRepository
-    namespace: flux-system
+    
