@@ -6,8 +6,8 @@ metadata:
 spec:
   interval: 1m
   approvePlan: auto
-  path: ./
+  path: ./clusters/infra/tf-modules
   sourceRef:
     kind: GitRepository
-    name: tf-helloworld
+    name: flux-system
     namespace: flux-system
