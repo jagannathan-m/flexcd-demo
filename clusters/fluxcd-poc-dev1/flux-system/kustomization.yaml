@@ -4,5 +4,7 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - tf-controller.yaml
+- weave-gitops-dashboard.yaml
+- source-helmrepo.yaml
 # - source-terraform.yaml
-- terraform-resource.yaml
+# - terraform-resource.yaml
