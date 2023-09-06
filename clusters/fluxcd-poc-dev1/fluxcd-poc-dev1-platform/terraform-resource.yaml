@@ -2,15 +2,15 @@ apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:
   name: helloworld
-  namespace: flux-system
+  namespace: fluxcd-poc-dev1-platform
 spec:
   interval: 1m
   approvePlan: auto
-  path: ./clusters/infra/tf-modules
+  path: ./
   storeReadablePlan: json
   sourceRef:
     kind: GitRepository
-    name: flux-system
-    namespace: flux-system
+    name: flux-tf-helloworld
+    namespace: fluxcd-poc-dev1-platform
   writeOutputsToSecret:
-    name: helloworld-output
+    name: tf-helloworld-output-v2
