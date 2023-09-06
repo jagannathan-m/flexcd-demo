@@ -7,7 +7,10 @@ spec:
   interval: 1m
   approvePlan: auto
   path: ./clusters/infra/tf-modules
+  storeReadablePlan: json
   sourceRef:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
+  writeOutputsToSecret:
+    name: tf-helloworld-output
