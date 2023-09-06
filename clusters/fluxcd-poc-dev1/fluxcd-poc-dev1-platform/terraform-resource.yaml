@@ -6,11 +6,11 @@ metadata:
 spec:
   interval: 1m
   approvePlan: auto
-  path: ./clusters/infra/tf-modules
+  # path: ./clusters/infra/tf-modules
   storeReadablePlan: json
   sourceRef:
     kind: GitRepository
-    name: flux-system
-    namespace: flux-system
+    name: flux-tf-helloworld
+    namespace: fluxcd-poc-dev1-platform
   writeOutputsToSecret:
     name: helloworld-output
