@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: chartmuseum
-      version: '0.3.8'
+      version: '0.1.0'
   interval: 1m0s
   releaseName: fluxcd-poc-dev1-platform-helm-guestbook-qwe222
   values:
