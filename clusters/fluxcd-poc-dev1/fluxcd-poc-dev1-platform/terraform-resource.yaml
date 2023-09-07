@@ -1,7 +1,7 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:
-  name: helloworld
+  name: tf-helloworld
   namespace: fluxcd-poc-dev1-platform
 spec:
   interval: 1m
@@ -13,4 +13,4 @@ spec:
     name: flux-tf-helloworld
     namespace: fluxcd-poc-dev1-platform
   writeOutputsToSecret:
-    name: helloworld-output
+    name: tf-helloworld-output-v1
