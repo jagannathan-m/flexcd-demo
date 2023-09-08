@@ -4,7 +4,7 @@ metadata:
   name: flux-tf-helloworld
   namespace: fluxcd-poc-dev1-platform
 spec:
-  interval: 1m0s
+  interval: 10m0s
   url: https://github.com/jagannathan-m/flux-tf-helloworld.git
   ref:
     branch: main
